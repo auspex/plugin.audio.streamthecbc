@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<!-- Plugin name -->
+	<string id="30000">CBC Radio Streams</string>
+	<!-- Settings -->
+	<string id="30001">High quality streams</string>
+	<!-- Plugin menu -->
+	<string id="30100">CBC Radio 1</string>
+	<string id="30101">CBC Radio 2</string>
+	<string id="30102">CBC Radio 3</string>
+	<string id="30103">CBC Music</string>
+</strings>

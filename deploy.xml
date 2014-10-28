@@ -1,0 +1,14 @@
+<project default="deploy">
+	<target name="deploy">
+		<basename property="project.name" file="${basedir}" />
+		<dirname property="project.dir" file="${basedir}" />
+		<property name="project.version" value="-0.1.0" />
+		<property name="zipfile" value="${basedir}/${project.name}${project.version}.zip" />
+		<delete file="${zipfile}" />
+		<zip destfile="${zipfile}" basedir="${project.dir}" 
+		    includes="${project.name}/"
+			excludes="**/example/, **/*.zip, **/deploy.xml, **/README.md, **/.*, **/*.pyc" />
+		<scp file="${zipfile}" todir="mobile@apple-tv:/var/mobile/"
+			keyfile="${user.home}/.ssh/id_rsa" />
+	</target>
+</project>

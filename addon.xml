@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.streamthecbc" name="CBC radio streams"
+	version="0.1.0" provider-name="Derek Broughton, PointerStop.ca">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup" version="3.2.1" />
+		<import addon="script.module.xbmcswift2" version="2.4.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<language></language>
+		<summary lang="en">Play streams from CBC Radio</summary>
+		<description lang="en">Play radio channels from CBC Radio (this is the Canadian Broadcasting Corporation's English language service — this plugin makes no attempt to find Radio Canada's French language streams).</description>
+		<disclaimer lang="en">"CBC™" is a trademark of the Canadian Broadcasting Corporation and is used solely to identify the source of the streams. This plugin has no official connection to CBC and is for personal, non-commercial, use only as permitted by CBC at http://www.cbc.ca/aboutcbc/discover/termsofuse.html (Section 2c).
+							  
+Note that most streams will not be available outside Canada. Radio 1 streams and the Radio 2 "International" streams should be usable.
+		</disclaimer>
+	</extension>
+</addon>
